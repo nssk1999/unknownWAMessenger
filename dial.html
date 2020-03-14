@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<style>
+    td{
+        text-align:center;
+    }
+</style>
+<html>
+
+    <title>WA Dialer</title>
+    <body>
+        <div align="center">
+           <a href="https://wa.me/91" id="dial">wa.me/91</a>
+        </div>
+        <div>
+                <form name="form1">
+                        <table align="center">
+                        <tr><td colspan="4">unknown Whatsapp Dialer</td></tr>
+                            <tr><td colspan="4">
+                            <input type = "text" name="result" placeholder="0"  style="text-align:right"></input>
+                            </td></tr>
+                            <tr>
+                            <td><button type = "button" onclick="number(value)" value="1">1</button></td>
+                            <td><button type = "button" onclick="number(value)" value="2">2</button></td>
+                            <td><button type = "button" onclick="number(value)" value="3">3</button></td>
+                            <!-- <td><button type = "button" onclick="number(value)" value="+">+</button></td> -->
+                            </tr>
+                            <tr>
+                            <td><button type = "button" onclick="number(value)" value="4">4</button></td>
+                            <td><button type = "button" onclick="number(value)" value="5">5</button></td>
+                            <td><button type = "button" onclick="number(value)" value="6">6</button></td>
+                            <!-- <td><button type = "button" onclick="number(value)" value="-">-</button></td> -->
+                            </tr>
+                            <tr>
+                            <td><button type = "button" onclick="number(value)" value="7">7</button></td>
+                            <td><button type = "button" onclick="number(value)" value="8">8</button></td>
+                            <td><button type = "button" onclick="number(value)" value="9">9</button></td>
+                            <!-- <td><button type = "button" onclick="number(value)" value="/">/</button></td> -->
+                            </tr>
+                            <tr>
+                            <td><button type = "button" onclick="number(value)" value="."><strong>.</strong></button></td>
+                            <td><button type = "button" onclick="number(value)" value="0">0</button></td>
+                            <td><button type = "button" onclick="number(value)" value="*">*</button></td>		
+                            <!-- <td><button type = "button" onclick="changeURL()" value="%">%</button></td> -->
+                            </tr>
+                            <tr>
+                            <td colspan="2">
+                            <button type = "button" onclick="cle(value)" value="">Clear</button></td>
+                            <td colspan="2">
+                            <button type = "button" onclick="changeURL()">dial</button>
+                            </td>
+                            </tr>
+                        </table>
+                        </form>
+        </div>
+    </body>
+</html>
+
+<script>
+function number(value){
+	document.form1.result.value +=value;
+	}
+function cle(value){
+	document.form1.result.value =value;
+}
+function changeURL() {
+        document.getElementById("dial").href+=document.form1.result.value;
+        document.getElementById("dial").innerHTML+=document.form1.result.value;
+        //Set URL
+}
+</script>
