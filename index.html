@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel='manifest' href='/manifest.json'>
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<style>
+    .wrapper{
+        max-width: 100%;
+        margin: 0 auto;
+        height: 500px;
+    }
+    @media only screen and (max-width:768px){
+    
+         .col1, .col2{
+            width:50%;
+        }
+         .col3{
+            width:100%;
+        }
+    }
+
+    @media only screen and (max-width:480px){
+         .col{
+           float: none;
+           width:100%;
+        }
+}
+</style>
+
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>WA Dialer</title>
+    <h4 align="center">Unknown Whatsapp Messeger</h4>
+
+
+
+    </head>
+
+<body>
+    <!-- <br><br><br> <br><br><br><br><br> <br><br> -->
+    <div class=" wrapper">
+        <div align="center">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" name="result" type="text" pattern="[0-9]{10}" id="phone">
+                <label class="mdl-textfield__label" for="phone">Number...</label>
+                <span class="mdl-textfield__error">Input is not a Phone number!</span>
+            </div>
+            <br>
+            <div class="mdl-textfield mdl-js-textfield" align="center">
+                <textarea name="mseg" class="mdl-textfield__input" type="text" rows="3" id="msg"></textarea>
+                <label class="mdl-textfield__label" for="msg">Enter your message here</label>
+            </div>
+        </div>
+        <br>
+        <div align="center">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary"
+                onclick="submitm()" id="j">
+                Submit with message
+            </button>
+        </div>
+        <br>
+    </div>
+    <!-- <br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br> -->
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo">&copy N S S KOUSHIK</div>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a class="mdl-navigation__link"  href="https://faq.whatsapp.com/">Help</a></li>
+            <li><a class="mdl-navigation__link" href="https://www.whatsapp.com/legal/">Privacy & Terms</a></li>
+          </ul>
+        </div>
+      </footer>
+
+</body>
+
+</html>
+<script type="module">
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+</script>
+<script>
+    function submitm() {
+
+        const phone = document.getElementById("phone");
+        const msg = document.getElementById("msg");
+
+        const anchor = document.createElement("a");
+        anchor.href = "https://wa.me/91" + phone.value + "?text=" + encodeURI(msg.value);
+        anchor.click();
+    }
+</script>

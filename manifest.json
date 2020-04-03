@@ -1,0 +1,95 @@
+{
+	"dir" : "ltr",
+	"lang" : "English",
+	"name" : "WA Click-to-Chat",
+	"scope" : "/",
+	"display" : "browser",
+	"start_url" : "https://wadialer.000webhostapp.com/",
+	"short_name" : "WA C2K",
+	"theme_color" : "transparent",
+	"description" : "An app to chat in whatsapp with anyone irresctive of the contact saved in your device",
+	"orientation" : "any",
+	"background_color" : "transparent",
+	"related_applications" : [],
+	"prefer_related_applications" : false,
+	"icons" : [
+		{
+			"src": "icon.png",
+			"sizes": "44x44"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "1240x600"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "300x300"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "150x150"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "88x88"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "24x24"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "50x50"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "620x300"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "36x36"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "1024x1024"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "180x180"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "152x152"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "120x120"
+		},
+		{
+			"src": "icon.png",
+			"sizes": "76x76"
+		}],
+	"url" : "https://wadialer.000webhostapp.com/",
+	"screenshots" : [],
+	"generated" : "true"
+}
